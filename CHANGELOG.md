@@ -1,5 +1,9 @@
 # Changes to pHTML Tape
 
+### 1.1.0 (February 11, 2018)
+
+- Update `phtml` to 1.1.2 (minor)
+
 ### 1.0.0 (February 10, 2018)
 
 - Initial version
