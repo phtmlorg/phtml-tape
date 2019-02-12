@@ -24,7 +24,7 @@ getOptions().then(
 			const processOptions = Object.assign({ from: sourcePath, to: resultPath }, test.processOptions);
 			const pluginOptions = test.options;
 
-			const pluginName = Object(testPlugin.phtml).phtmlPlugin || 'phtml';
+			const pluginName = Object(testPlugin).name || 'phtml';
 
 			log.wait(pluginName, test.message, options.ci);
 
