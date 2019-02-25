@@ -1,8 +1,12 @@
 # Changes to pHTML Tape
 
-### 1.1.3 (February 12, 2018)
+### 2.0.1 (February 25, 2018)
 
-- Fixed: Issue where the plugin name was not displaying correctly
+- Updated: `phtml` to 2.0.2 (patch)
+
+### 2.0.0 (February 18, 2018)
+
+- Updated: `phtml` to 2.0.1 (major)
 
 ### 1.1.2 (February 12, 2018)
 
