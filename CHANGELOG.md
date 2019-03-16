@@ -1,5 +1,9 @@
 # Changes to pHTML Tape
 
+### 3.0.0 (March 16, 2019)
+
+- Updated: `phtml` to 3.0.0 (major)
+
 ### 2.0.1 (February 25, 2018)
 
 - Updated: `phtml` to 2.0.2 (patch)
