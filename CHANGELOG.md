@@ -1,5 +1,10 @@
 # Changes to pHTML Tape
 
+### 4.0.0 (May 6, 2019)
+
+- Updated: `phtml` to 4.0.0 (major)
+- Updated: Node 8+ compatibility (major)
+
 ### 3.1.0 (May 3, 2019)
 
 - Updated: `phtml` to 3.3.1 (minor)
