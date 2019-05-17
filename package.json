@@ -1,6 +1,6 @@
 {
   "name": "phtml-tape",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Quickly test pHTML plugins",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "license": "CC0-1.0",
@@ -19,7 +19,7 @@
     "prepublish": "npm test",
     "pretest:tape": "npm run build",
     "test": "npm run test:js && npm run test:tape",
-    "test:js": "eslint src/*.js src/lib/*.js --cache --ignore-pattern .gitignore",
+    "test:js": "eslint src/{*,**/*}.js --cache --ignore-pattern .gitignore",
     "test:tape": "node . --plugin test/plugin.js --config test",
     "test:tape:ci": "node . --ci true --plugin test/plugin.js --config test"
   },
@@ -32,24 +32,27 @@
     "@babel/preset-env": "^7.4.4",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
-    "eslint-config-dev": "2.0.0",
-    "phtml": "^4.0.0",
-    "rollup": "^1.11.3",
+    "phtml": "^4.1.0",
+    "rollup": "^1.12.1",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-terser": "^4.0.4"
   },
   "eslintConfig": {
-    "extends": "dev",
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
     "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "impliedStrict": true,
+      "sourceType": "module"
+    },
+    "root": true,
     "rules": {
-      "complexity": [
-        1,
-        24
-      ],
-      "max-params": [
-        1,
-        4
-      ]
+      "no-console": 0
     }
   },
   "keywords": [
